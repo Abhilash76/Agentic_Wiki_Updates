@@ -6,6 +6,7 @@ from services.publisher import Publisher
 from services.logger import log
 
 class AgentOrchestrator:
+    """Orchestrator to control the flow"""
     def __init__(self):
         self.retriever = RetrieverAgent()
         self.editor = EditorAgent()
