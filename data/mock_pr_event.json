@@ -1,0 +1,50 @@
+[
+  {
+    "repository": {
+      "full_name": "acme/llm-service"
+    },
+    "pull_request": {
+      "number": 42,
+      "title": "Improve inference error handling",
+      "head": {
+        "ref": "feature/inference-fix"
+      }
+    },
+    "commits": [
+      {
+        "sha": "abc123",
+        "message": "Improve model load retry logic",
+        "files_changed": [
+          {
+            "path": "src/model_inference.py",
+            "diff": "- load_model()\\n+ load_model(retry=3)"
+          },
+          {
+            "path": "src/data_pipeline.py",
+            "diff": "- transform(x)\\n+ transform(x) # handle nulls"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "repository": { "full_name": "acme/llm-service" },
+    "pull_request": {
+      "number": 44,
+      "title": "Update README for inference service",
+      "attachments": [
+        "https://arxiv.org/abs/2401.12345",
+        "docs/inference_design.pdf"
+      ]
+    },
+    "commits": [
+      {
+        "sha": "def456",
+        "message": "Updated README.md for inference improvements",
+        "files_changed": [
+          { "path": "README.md", "diff": "- old details\n+ added new section on inference pipeline" }
+        ]
+      }
+    ]
+  }
+]
