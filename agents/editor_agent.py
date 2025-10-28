@@ -8,7 +8,7 @@ class EditorAgent:
             return f"Update for `{file_path}`\n\n- Added null safety in transformations.\n- Add schema validation examples.\n"
         return f"Update for `{file_path}`\n\n- General improvements and documentation fixes.\n"
 
-    def generate_updates(self, changed_files, repo_context):
+    def generate_updates(self, changed_files):
         log("Editor", f"Generating drafts for {len(changed_files)} files...", "magenta")
         drafts = []
         for f in changed_files:

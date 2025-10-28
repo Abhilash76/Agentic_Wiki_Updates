@@ -2,7 +2,7 @@ from services.logger import log
 import random
 
 class RelativityAgent:
-    def evaluate_alignment(self, readme_diff, attachments):
+    def evaluate_alignment(self, attachments):
         log("RelativityAgent", f"Evaluating {len(attachments)} source(s) for README.md alignment...", "blue")
         reviews = []
         for src in attachments:

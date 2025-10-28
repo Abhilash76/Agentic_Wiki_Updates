@@ -16,7 +16,7 @@ class AgentOrchestrator:
     def handle_pull_request(self, pr_event):
         files = self.retriever.get_changed_files(pr_event)
         for ev in pr_event:
-            drafts = self.editor.generate_updates(files, ev["repository"]["full_name"])
+            drafts = self.editor.generate_updates(files)
         valid, rejected = self.validator.check_drafts(drafts)
 
         for ev in pr_event:
