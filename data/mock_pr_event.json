@@ -1,7 +1,7 @@
 [
   {
     "repository": {
-      "full_name": "acme/llm-service"
+      "full_name": "wiki_editor/llm-service"
     },
     "pull_request": {
       "number": 42,
@@ -28,7 +28,7 @@
     ]
   },
   {
-    "repository": { "full_name": "acme/llm-service" },
+    "repository": { "full_name": "wiki-editor/llm-service" },
     "pull_request": {
       "number": 44,
       "title": "Update README for inference service",
